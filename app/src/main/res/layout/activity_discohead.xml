@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".DiscoHead_Activity"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name_LabelVklDiscoHead"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/НАЗВАНИЕДИСКОHEAD"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_Label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/НАЗВАНИЕ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/butBackDiskoH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/Назад"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textDiscoHead1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/DmxDiscoHead1"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_Label" />
+
+        <SeekBar
+            android:id="@+id/seekDiskoHead1"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDiscoHead1" />
+
+        <TextView
+            android:id="@+id/textDiscoHead2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/DmxDiscoHead2"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekDiskoHead1" />
+
+        <SeekBar
+            android:id="@+id/seekDiskoHead2"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDiscoHead2" />
+
+        <TextView
+            android:id="@+id/textDiscoHead3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/DmxDiscoHead3"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekDiskoHead2" />
+
+        <SeekBar
+            android:id="@+id/seekDiskoHead3"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDiscoHead3" />
+
+        <TextView
+            android:id="@+id/textDiscoHead4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/DmxDiscoHead4"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekDiskoHead3" />
+
+        <SeekBar
+            android:id="@+id/seekDiskoHead4"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDiscoHead4" />
+
+        <TextView
+            android:id="@+id/textDiscoHead5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/DmxDiscoHead5"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekDiskoHead4" />
+
+        <SeekBar
+            android:id="@+id/seekDiskoHead5"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDiscoHead5" />
+
+        <TextView
+            android:id="@+id/textDiscoHead6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/DmxDiscoHead6"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekDiskoHead5" />
+
+        <SeekBar
+            android:id="@+id/seekDiskoHead6"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:max="255"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDiscoHead6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.wear.widget.BoxInsetLayout>

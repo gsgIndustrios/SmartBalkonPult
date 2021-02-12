@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".Sound_Activity"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name_LabelVklSound"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/НАЗВАНИЕУСИЛОК"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_TextSound1"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/ОБЛАСТЬЗВУК"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_Label5" />
+
+        <TextView
+            android:id="@+id/name_TextSound2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/ОБЛАСТЬРАДИО"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound10" />
+
+        <TextView
+            android:id="@+id/name_Label5"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/НАЗВАНИЕ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/butBackS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/Назад"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/butSound1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextSound1" />
+
+        <Button
+            android:id="@+id/butSound2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound1" />
+
+        <Button
+            android:id="@+id/butSound3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_3"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextSound1" />
+
+        <Button
+            android:id="@+id/butSound4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_4"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound3" />
+
+        <Button
+            android:id="@+id/butSound5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_5"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextSound1" />
+
+        <Button
+            android:id="@+id/butSound6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_6"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound5" />
+
+        <Button
+            android:id="@+id/butSound7"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_7"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/butSound9"
+            app:layout_constraintTop_toBottomOf="@+id/butSound11" />
+
+        <Button
+            android:id="@+id/butSound8"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_8"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound11" />
+
+        <Button
+            android:id="@+id/butSound9"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_9"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound11" />
+
+        <Button
+            android:id="@+id/butSound10"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_10"
+            android:textSize="8sp"
+            app:layout_constraintStart_toEndOf="@+id/butSound8"
+            app:layout_constraintTop_toBottomOf="@+id/butSound11" />
+
+        <Button
+            android:id="@+id/butSound11"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_11"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound4" />
+
+        <Button
+            android:id="@+id/butSound12"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="serif"
+            android:text="@string/button2_12"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSound4" />
+
+        <Button
+            android:id="@+id/butRadio8"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/button3_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butRadio4" />
+
+        <Button
+            android:id="@+id/butRadio1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/button3_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/butRadio3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/button3_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/butRadio5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/button3_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/butRadio6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/button3_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butRadio5" />
+
+        <Button
+            android:id="@+id/butRadio4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/button3_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butRadio3" />
+
+        <Button
+            android:id="@+id/butRadio2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/button3_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butRadio1" />
+
+        <Button
+            android:id="@+id/butRadio7"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/button3_7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butRadio4" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:entries="@array/Radiostations"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextSound2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.wear.widget.BoxInsetLayout>

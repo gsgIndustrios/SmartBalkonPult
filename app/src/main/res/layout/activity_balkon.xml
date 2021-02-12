@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".Balkon_Activity"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name_Label6"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/НАЗВАНИЕ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_LabelVklBalkon"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/НАЗВАНИЕБАЛКОН"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_TextBalkon1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/ДИММЕРЫ"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_Label6" />
+
+        <Button
+            android:id="@+id/butBackB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/Назад"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/butDimSw1"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekDim1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textLightDim1" />
+
+        <TextView
+            android:id="@+id/textLightDim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/Seek_1"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/seekDim1"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/seekDim1"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon1" />
+
+        <SeekBar
+            android:id="@+id/seekDim1"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:max="100"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/butDimSw1"
+            app:layout_constraintTop_toBottomOf="@+id/textLightDim1" />
+
+        <ToggleButton
+            android:id="@+id/butDimSw2"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekDim2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textLightDim2" />
+
+        <SeekBar
+            android:id="@+id/seekDim2"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:max="100"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/butDimSw2"
+            app:layout_constraintTop_toBottomOf="@+id/textLightDim2" />
+
+        <TextView
+            android:id="@+id/textLightDim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/Seek_2"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/seekDim2"
+            app:layout_constraintStart_toStartOf="@+id/seekDim2"
+            app:layout_constraintTop_toBottomOf="@+id/seekDim1" />
+
+        <ToggleButton
+            android:id="@+id/butDimSw3"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekDim3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textLightDim3" />
+
+        <TextView
+            android:id="@+id/textLightDim3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/Seek_3"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/seekDim3"
+            app:layout_constraintStart_toStartOf="@+id/seekDim3"
+            app:layout_constraintTop_toBottomOf="@+id/seekDim2" />
+
+        <SeekBar
+            android:id="@+id/seekDim3"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:max="100"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/butDimSw3"
+            app:layout_constraintTop_toBottomOf="@+id/textLightDim3" />
+
+        <ToggleButton
+            android:id="@+id/butDimSw4"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekDim4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textLightDim4" />
+
+        <TextView
+            android:id="@+id/textLightDim4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/Seek_4"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/seekDim4"
+            app:layout_constraintStart_toStartOf="@+id/seekDim4"
+            app:layout_constraintTop_toBottomOf="@+id/seekDim3" />
+
+        <SeekBar
+            android:id="@+id/seekDim4"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:max="100"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/butDimSw4"
+            app:layout_constraintTop_toBottomOf="@+id/textLightDim4" />
+
+        <ToggleButton
+            android:id="@+id/butDimSw5"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekDim5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textLightDim5" />
+
+        <TextView
+            android:id="@+id/textLightDim5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/Seek_5"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/seekDim5"
+            app:layout_constraintStart_toStartOf="@+id/seekDim5"
+            app:layout_constraintTop_toBottomOf="@+id/seekDim4" />
+
+        <SeekBar
+            android:id="@+id/seekDim5"
+            style="@android:style/Widget.Holo.Light.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:max="100"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toEndOf="@+id/butDimSw5"
+            app:layout_constraintTop_toBottomOf="@+id/textLightDim5" />
+
+        <TextView
+            android:id="@+id/name_TextBalkon2"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/РЕЛЕ"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butDimSw5" />
+
+        <TextView
+            android:id="@+id/textLightSw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_1"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw1"
+            app:layout_constraintStart_toStartOf="@+id/butSw1"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon2" />
+
+        <ToggleButton
+            android:id="@+id/butSw1"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw1" />
+
+        <TextView
+            android:id="@+id/textLightSw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_2"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw2"
+            app:layout_constraintStart_toStartOf="@+id/butSw2"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon2" />
+
+        <ToggleButton
+            android:id="@+id/butSw2"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintStart_toEndOf="@+id/butSw1"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw2" />
+
+        <TextView
+            android:id="@+id/textLightSw3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_3"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw3"
+            app:layout_constraintStart_toStartOf="@+id/butSw3"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon2" />
+
+        <ToggleButton
+            android:id="@+id/butSw3"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintEnd_toStartOf="@+id/butSw4"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw3" />
+
+        <TextView
+            android:id="@+id/textLightSw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_4"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw4"
+            app:layout_constraintStart_toStartOf="@+id/butSw4"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon2" />
+
+        <ToggleButton
+            android:id="@+id/butSw4"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw4" />
+
+        <TextView
+            android:id="@+id/textLightSw5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_5"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw5"
+            app:layout_constraintStart_toStartOf="@+id/butSw5"
+            app:layout_constraintTop_toBottomOf="@+id/butSw1" />
+
+        <ToggleButton
+            android:id="@+id/butSw5"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw5" />
+
+        <TextView
+            android:id="@+id/textLightSw6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_6"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw6"
+            app:layout_constraintStart_toStartOf="@+id/butSw6"
+            app:layout_constraintTop_toBottomOf="@+id/butSw2" />
+
+        <ToggleButton
+            android:id="@+id/butSw6"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintStart_toEndOf="@+id/butSw5"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw6" />
+
+        <TextView
+            android:id="@+id/textLightSw7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_7"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw7"
+            app:layout_constraintStart_toStartOf="@+id/butSw7"
+            app:layout_constraintTop_toBottomOf="@+id/butSw3" />
+
+        <ToggleButton
+            android:id="@+id/butSw7"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintEnd_toStartOf="@+id/butSw8"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw7" />
+
+        <TextView
+            android:id="@+id/textLightSw8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="@string/SW_8"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/butSw8"
+            app:layout_constraintStart_toStartOf="@+id/butSw8"
+            app:layout_constraintTop_toBottomOf="@+id/butSw4" />
+
+        <ToggleButton
+            android:id="@+id/butSw8"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/biorhyme_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLightSw8" />
+
+        <TextView
+            android:id="@+id/name_TextBalkon3"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/УСТРОЙСТВА"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butSw5" />
+
+        <Button
+            android:id="@+id/butSound"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/УСИЛИТЕЛЬ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon3" />
+
+        <Button
+            android:id="@+id/butSensors"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/ДАТЧИКИ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TextBalkon3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.wear.widget.BoxInsetLayout>
